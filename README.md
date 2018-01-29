@@ -4,7 +4,7 @@ This repository contains the code and data sets for the paper "Main Content Dete
 
 ### Prerequisites
 
-* Windows
+* Microsoft Windows
 * .NET 4.6.2 or greater
 * Microsoft Visual Studio 2015 or greater (or alternative compatible compiler/IDE)
 
@@ -18,4 +18,4 @@ This repository contains the code and data sets for the paper "Main Content Dete
 
 ### Datasets
 
-The data sets are in the .\data folder. test-set-1-pmids.csv contains the PubMed ids (PMIDs) of the full test set (359 articles) and test-set-2-pmids.csv contains the PMIDs for the 158 online journal articles that contained the HTML article/main tag.
+The datasets are in the .\data folder. test-set-1-pmids.csv contains the PubMed ids (PMIDs) of the full test set (359 articles) and test-set-2-pmids.csv contains the PMIDs of the 158 online journal articles that contained the HTML article/main tag.
