@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4BD38E1-E528-4995-BF51-E9D18D68994C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Imppoa.HtmlZoning</RootNamespace>
+    <AssemblyName>Imppoa.HtmlZoning.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dom\CssHelper.cs" />
+    <Compile Include="Dom\FeatureValueExtractors\AttributeValue.cs" />
+    <Compile Include="Dom\Filters\ANameFilter.cs" />
+    <Compile Include="Dom\Filters\DisplayBlockFilter.cs" />
+    <Compile Include="Dom\Filters\DisplayHiddenFilter.cs" />
+    <Compile Include="Dom\Filters\DisplayInlineFilter.cs" />
+    <Compile Include="Dom\Filters\DisplayNoneFilter.cs" />
+    <Compile Include="Dom\Filters\HasStyleFilter.cs" />
+    <Compile Include="Dom\Filters\StyleValueFilter.cs" />
+    <Compile Include="Dom\HtmlHelper.cs" />
+    <Compile Include="TreeStructure\FeatureValueExtractor.cs" />
+    <Compile Include="TreeStructure\FeatureValueExtractors\ExistingFeatureValue.cs" />
+    <Compile Include="TreeStructure\FeatureValueList.cs" />
+    <Compile Include="TreeStructure\Filters\AllFilter.cs" />
+    <Compile Include="TreeStructure\Filters\AnyFilter.cs" />
+    <Compile Include="TreeStructure\Filters\CompositeFilter.cs" />
+    <Compile Include="TreeStructure\Filters\FeatureEqualTo.cs" />
+    <Compile Include="TreeStructure\Filters\FeatureGreaterThan.cs" />
+    <Compile Include="TreeStructure\Filters\FeatureLessThan.cs" />
+    <Compile Include="Dom\Filters\HasAreaFilter.cs" />
+    <Compile Include="Dom\Filters\HasTextFilter.cs" />
+    <Compile Include="Dom\Filters\OffScreenFilter.cs" />
+    <Compile Include="Dom\Filters\TagNameFilter.cs" />
+    <Compile Include="Dom\Filters\VisibilityHiddenFilter.cs" />
+    <Compile Include="ColumnTree\Column.cs" />
+    <Compile Include="ColumnTree\ColumnTree.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeStructure\Algorithm.cs" />
+    <Compile Include="TreeStructure\Filters\FeatureLessThanOrEqual.cs" />
+    <Compile Include="TreeStructure\Filters\FeatureGreaterThanOrEqual.cs" />
+    <Compile Include="TreeStructure\Filters\FeatureNotEqualTo.cs" />
+    <Compile Include="TreeStructure\Filters\NotFilter.cs" />
+    <Compile Include="TreeStructure\Filters\ThresholdFilter.cs" />
+    <Compile Include="TreeStructure\Filters\TypeFilter.cs" />
+    <Compile Include="TreeStructure\GenericFeatureValueExtractor.cs" />
+    <Compile Include="TreeStructure\GenericFilter.cs" />
+    <Compile Include="TreeStructure\Visitors\MaximumFeatureValue.cs" />
+    <Compile Include="TreeStructure\Visitors\MinimumFeatureValue.cs" />
+    <Compile Include="TreeStructure\Visitors\RecordFeatureValues.cs" />
+    <Compile Include="TreeStructure\Visitors\TreeNodeDeclassifier.cs" />
+    <Compile Include="TreeStructure\Visitors\FeatureExtractionVisitor.cs" />
+    <Compile Include="TreeStructure\Filters\AncestorFilter.cs" />
+    <Compile Include="TreeStructure\Filters\DescendantFilter.cs" />
+    <Compile Include="TreeStructure\Visitors\TreeNodeClassifier.cs" />
+    <Compile Include="TreeStructure\Walkers\BreadthFirstWalkerFactory.cs" />
+    <Compile Include="TreeStructure\Walkers\DepthFirstWalkerFactory.cs" />
+    <Compile Include="TreeStructure\Walkers\QueuedWalker.cs" />
+    <Compile Include="TreeStructure\Walkers\ReversedWalker.cs" />
+    <Compile Include="TreeStructure\Walkers\TreeWalkerFactory.cs" />
+    <Compile Include="ZoneTree\FeatureValueExtractors\ZoneVisibleText.cs" />
+    <Compile Include="ZoneTree\Filters\ZoneDescendantElementsTagNameFilter.cs" />
+    <Compile Include="ZoneTree\Filters\ZoneElementsTagNameFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Serialization\Serialization.csproj">
+      <Project>{cf291063-e93e-4da9-903d-86604d816730}</Project>
+      <Name>Serialization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

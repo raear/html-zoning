@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKeyValueOfstringstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <KeyValueOfstringstring>
+    <Key>borderBottomStyle</Key>
+    <Value>inset</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderBottomWidth</Key>
+    <Value>2px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderLeftStyle</Key>
+    <Value>inset</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderLeftWidth</Key>
+    <Value>2px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderRightStyle</Key>
+    <Value>inset</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderRightWidth</Key>
+    <Value>2px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderTopStyle</Key>
+    <Value>inset</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderTopWidth</Key>
+    <Value>2px</Value>
+  </KeyValueOfstringstring>
+</ArrayOfKeyValueOfstringstring>

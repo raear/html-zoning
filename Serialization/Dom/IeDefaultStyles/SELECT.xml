@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKeyValueOfstringstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <KeyValueOfstringstring>
+    <Key>backgroundColor</Key>
+    <Value>rgb(255, 255, 255)</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderBottomColor</Key>
+    <Value>rgb(227, 227, 227)</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderBottomStyle</Key>
+    <Value>solid</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderBottomWidth</Key>
+    <Value>2px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderLeftColor</Key>
+    <Value>rgb(105, 105, 105)</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderLeftStyle</Key>
+    <Value>solid</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderLeftWidth</Key>
+    <Value>2px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderRightColor</Key>
+    <Value>rgb(227, 227, 227)</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderRightStyle</Key>
+    <Value>solid</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderRightWidth</Key>
+    <Value>2px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderTopColor</Key>
+    <Value>rgb(105, 105, 105)</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderTopStyle</Key>
+    <Value>solid</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>borderTopWidth</Key>
+    <Value>2px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>boxSizing</Key>
+    <Value>border-box</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>display</Key>
+    <Value>inline-block</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>fontFamily</Key>
+    <Value>Arial</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>fontSize</Key>
+    <Value>13.33px</Value>
+  </KeyValueOfstringstring>
+</ArrayOfKeyValueOfstringstring>

@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF291063-E93E-4DA9-903D-86604D816730}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Imppoa.HtmlZoning</RootNamespace>
+    <AssemblyName>Imppoa.HtmlZoning.Serialization</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dom\Css.cs" />
+    <Compile Include="Dom\DefaultStyleLookup.cs" />
+    <Compile Include="Dom\HtmlDocumentInfo.cs" />
+    <Compile Include="Dom\HtmlElementType.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TreeStructure\Filters\LeafFilter.cs" />
+    <Compile Include="Dom\Html.cs" />
+    <Compile Include="Dom\HtmlDocument.cs" />
+    <Compile Include="Dom\HtmlElement.cs" />
+    <Compile Include="Dom\Serialization\HtmlDocumentSerializer.cs" />
+    <Compile Include="Dom\Serialization\SerializationOutput.cs" />
+    <Compile Include="Dom\Serialization\SerializableDocument.cs" />
+    <Compile Include="Dom\Serialization\SerializableDocumentFactory.cs" />
+    <Compile Include="Dom\Serialization\SerializableElement.cs" />
+    <Compile Include="Dom\Serialization\SerializableElementList.cs" />
+    <Compile Include="TreeStructure\Filters\RejectFiler.cs" />
+    <Compile Include="TreeStructure\TreeWalker.cs" />
+    <Compile Include="Utils\ExtensionMethods.cs" />
+    <Compile Include="Utils\SerializationUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeStructure\Walkers\DepthFirstWalker.cs" />
+    <Compile Include="TreeStructure\Walkers\BreadthFirstWalker.cs" />
+    <Compile Include="TreeStructure\TreeNodeVisitor.cs" />
+    <Compile Include="TreeStructure\TreeNodeFilter.cs" />
+    <Compile Include="TreeStructure\Filters\AcceptFilter.cs" />
+    <Compile Include="TreeStructure\Tree.cs" />
+    <Compile Include="TreeStructure\TreeNode.cs" />
+    <Compile Include="TreeStructure\TreeNodeFeature.cs" />
+    <Compile Include="Utils\Range.cs" />
+    <Compile Include="Utils\TreeNodeUtils.cs" />
+    <Compile Include="ZoneTree\Serialization\SerializableZoneArray.cs" />
+    <Compile Include="ZoneTree\Zone.cs" />
+    <Compile Include="ZoneTree\ZoneTree.cs" />
+    <Compile Include="ZoneTree\Serialization\ZoneTreeSerializer.cs" />
+    <Compile Include="ZoneTree\ZoneType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\ADDRESS.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\ARTICLE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\ASIDE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\AUDIO.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\B.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\BIG.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\BLOCKQUOTE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\BODY.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\BUTTON.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\CAPTION.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\CENTER.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\CITE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\CODE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\COL.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\COLGROUP.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\DATALIST.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\DD.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\DEL.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\DFN.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\DIR.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\DIV.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\DL.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\DT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\EM.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\FIELDSET.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\FIGCAPTION.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\FIGURE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\FOOTER.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\FORM.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\FRAME.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\FRAMESET.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\H1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\H2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\H3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\H4.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\H5.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\H6.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\HEAD.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\HEADER.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\HGROUP.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\HR.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\HTML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\I.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\IFRAME.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\INPUT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\INS.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\KBD.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\LEGEND.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\LI.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\LISTING.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\MARK.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\MARQUEE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\MENU.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\META.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\NAV.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\NOEMBED.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\NOFRAMES.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\NOSCRIPT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\OL.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\OPTGROUP.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\P.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\PLAINTEXT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\PRE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\PROGRESS.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\RT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\RUBY.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\S.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\SAMP.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\SCRIPT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\SECTION.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\SELECT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\SMALL.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\SPAN.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\STRIKE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\STRONG.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\STYLE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\SUB.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\SUP.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TABLE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TBODY.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TD.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TEXTAREA.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TFOOT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TH.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\THEAD.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TITLE.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TR.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\TT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\U.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\UL.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\VAR.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dom\IeDefaultStyles\XMP.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKeyValueOfstringstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <KeyValueOfstringstring>
+    <Key>display</Key>
+    <Value>table-cell</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>paddingBottom</Key>
+    <Value>1px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>paddingLeft</Key>
+    <Value>1px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>paddingRight</Key>
+    <Value>1px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>paddingTop</Key>
+    <Value>1px</Value>
+  </KeyValueOfstringstring>
+</ArrayOfKeyValueOfstringstring>

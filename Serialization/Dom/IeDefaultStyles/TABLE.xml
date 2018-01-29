@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKeyValueOfstringstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <KeyValueOfstringstring>
+    <Key>borderSpacing</Key>
+    <Value>2px 2px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>boxSizing</Key>
+    <Value>border-box</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>display</Key>
+    <Value>table</Value>
+  </KeyValueOfstringstring>
+</ArrayOfKeyValueOfstringstring>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKeyValueOfstringstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <KeyValueOfstringstring>
+    <Key>display</Key>
+    <Value>block</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>fontSize</Key>
+    <Value>24px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>fontWeight</Key>
+    <Value>700</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>marginBottom</Key>
+    <Value>19.92px</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>marginTop</Key>
+    <Value>19.92px</Value>
+  </KeyValueOfstringstring>
+</ArrayOfKeyValueOfstringstring>
