@@ -1,12 +1,12 @@
 # HTML Zoning and Main Content Detection Tool
 
-This repository contains the code and data sets for the paper "Main Content Detection in HTML Journal Articles" by A R Rae et al. A "Visualizer" GUI is provided to run the algorithms described in the paper.
+This repository contains the code and datasets for the paper "Main Content Detection in HTML Journal Articles" by A. R. Rae et al. A Visualizer GUI is provided to run the algorithms described in the paper.
 
 ### Prerequisites
 
 * Microsoft Windows
 * .NET 4.6.2 or greater
-* Microsoft Visual Studio 2015 or greater (or alternative compatible compiler/IDE)
+* Microsoft Visual Studio 2015 or greater (or alternative compatible compiler)
 
 ### How to run the main content detection algorithms
 
@@ -18,4 +18,4 @@ This repository contains the code and data sets for the paper "Main Content Dete
 
 ### Datasets
 
-The datasets are in the .\data folder. test-set-1-pmids.csv contains the PubMed ids (PMIDs) of the full test set (359 articles) and test-set-2-pmids.csv contains the PMIDs of the 158 online journal articles that contained the HTML article/main tag.
+The datasets are in the .\data folder. test-set-1-pmids.csv contains the PubMed ids (PMIDs) of the full test set (359 articles) and test-set-2-pmids.csv contains the PMIDs of the subset of 158 online journal articles that contained the HTML \<article> or \<main> tag.
