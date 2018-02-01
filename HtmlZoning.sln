@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManualLabeling", "ManualLabeling\ManualLabeling.csproj", "{CC9F217E-296C-4DC5-93CF-D221FD4C0BA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceEvaluation", "PerformanceEvaluation\PerformanceEvaluation.csproj", "{B234AACA-CB08-4084-A582-827FB2C81064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,18 @@ Global
 		{CC9F217E-296C-4DC5-93CF-D221FD4C0BA1}.Release|x64.Build.0 = Release|Any CPU
 		{CC9F217E-296C-4DC5-93CF-D221FD4C0BA1}.Release|x86.ActiveCfg = Release|Any CPU
 		{CC9F217E-296C-4DC5-93CF-D221FD4C0BA1}.Release|x86.Build.0 = Release|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Debug|x64.Build.0 = Debug|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Debug|x86.Build.0 = Debug|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Release|x64.ActiveCfg = Release|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Release|x64.Build.0 = Release|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Release|x86.ActiveCfg = Release|Any CPU
+		{B234AACA-CB08-4084-A582-827FB2C81064}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
