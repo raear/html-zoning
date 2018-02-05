@@ -5,8 +5,7 @@ This repository contains the code and datasets for the paper "Main Content Detec
 ## Prerequisites
 
 * Microsoft Windows
-* .NET 4.6.2 or greater
-* Microsoft Visual Studio 2015 or greater (or alternative compatible compiler)
+* .NET 4.6.2
 
 ## Datasets
 
@@ -28,7 +27,7 @@ The datasets are in the .\data folder. test-set-1-pmids.csv contains the PubMed 
 5) Wait for the web page to render and then do the HTML zoning (Click Actions > Do Zoning).
 6) When the zoning has finished, a list of suggested label names will appear in the panel on the right.
 7) Choose the "content" label and then select the main content zones using the mouse (hint: hold down the left mouse button and drag to create a selection rectangle).
-8) Next, save the labeled zone tree to file by clicking File > Save Zone Tree. You may also save a screenshot at any time by clicking File > Save Screenshot. Saving a screenshot is useful as the web page may be modified in the future.
+8) Next, save the labeled zone tree to file by clicking File > Save Zone Tree.
 9) After finishing the manual labeling for all PMIDs, run the Performance Evaluation console application as follows:
 
     ```PerformanceEvaluation.exe \path\to\baseline\data\ baseline-label algorithm-name \path\to\results.csv```
